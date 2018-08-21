@@ -19,7 +19,7 @@ Il faut vous répartir en 4 groupes maximum pour effectuer ce TP, qui est à com
 
 - Paramétrer le bucket pour qu'il se transforme en hébergement statique de site web en le faisait pointer vers `index.html`
 
-- Trouver l'URL et vérifier que le site web s'affiche correctement. Le site statique est pour l'instant connecté à une API qui existe déjà mais ce n'est pas la vôtre...
+- Trouver l'URL et vérifier que le site web s'affiche correctement (nombre d'employés : 2500). Le site statique est pour l'instant connecté à une API qui existe déjà mais ce n'est pas la vôtre...
 
 ## API REST
 
@@ -39,7 +39,7 @@ Il faut vous répartir en 4 groupes maximum pour effectuer ce TP, qui est à com
 
 - Dans l'application Beanstalk, trouver les informations sur l'URL de l'appli web et sur la base de données à utiliser, sachant que le mot de passe est identique au nom d'utilisateur et mettre à jour le profil spring `qlf` avec les infos de la base de données (mot de passe identique au nom d'utilisateur).
 
-- Ajouter une balise dans l'application Beanstalk en spécifiant la clé `spring.profiles.active` et la valeur `qlf` afin que l'API REST livrée sur Beanstalk utilise le profil `qlf` nouvellement créé.
+- Ajouter une variable d'environnement (Configuration => Logiciels) dans l'application Beanstalk en spécifiant la clé `SPRING_PROFILES_ACTIVE` et la valeur `qlf` afin que l'API REST livrée sur Beanstalk utilise le profil `qlf` nouvellement créé.
 
 - Exécuter un `mvn package` dans le répertoire du projet *ipi-mdd-050-ex* et vérifier qu'un jar a bien été créé dans le dossier `target`. Depuis le tableau de bord Beanstalk, charger ce jar dans l'application. Accéder à l'URL `.../employes/count` pour vérifier que cela renvoie bien un nombre correct.
 
@@ -47,9 +47,9 @@ Il faut vous répartir en 4 groupes maximum pour effectuer ce TP, qui est à com
 
 - Modifier le fichier `index.html` de l'appli Web statique en remplaçant toutes les occurences de `mdd050api-qlf.eu-west-2.elasticbeanstalk.com` par l'URL de votre application.
 
-- Ecraser le fichier `index.html` modifié sur S3 et créer une invalidation pour supprimer le cache.
+- Ecraser le fichier `index.html` modifié sur S3.
 
-- Vérifier que l'application web communique correctement avec l'API.
+- Vérifier que l'application web communique correctement avec l'API (2502 employés).
 
 ## Bonus (partie présentée l'après-midi si on a le temps)
 
