@@ -19,7 +19,7 @@ Il faut vous répartir en 4 groupes maximum pour effectuer ce TP, qui est à com
 
 - Paramétrer le bucket pour qu'il se transforme en hébergement statique de site web en le faisait pointer vers `index.html`
 
-- Trouver l'URL et vérifier que le site web s'affiche correctement.
+- Trouver l'URL et vérifier que le site web s'affiche correctement. Le site statique est pour l'instant connecté à une API qui existe déjà mais ce n'est pas la vôtre...
 
 ## API REST
 
